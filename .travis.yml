@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: LKYKScadSvJ/xWBxwSJIF5PV21RnuHHiGZVEtMTIyTTV9OnbtcHlXC2n3jG2rkE+NUiFZYJcoLCd5J/U5VxSW1yTqmuBPqlUPaHhSFrvRORMhOV6SJJhtpR6QEU235qp2bkUYRRN6hPBj83ddvnOWQ8WU2wVpwclowWLJkReFh8BsVj9MLVVWK8F+aZG/8kwACplBF0G1dstjLcFFunXag4Shx+u5o2pJUR6m4mjUaHuXICwqht0qwmReOEa837Hnjop6dPH705GJEsxrLm5Z9QFnc9Vgzk0Db6qYFnmiuDa14qfJRI9HHLFQVg15yOOOs8slWCpXQRlguc0aBV4Lo6dxIlqjDLUW1i1FvcCkaKPHGabYgQoCAMCrAwr7rAC7gEh+CRcr8xpDZL5SRl8D45utfr+xqh4Adqa7mthwab+xT6ekq01081WoGxuBA718dUfhKIEvqdZo97oYpMDpzhgUJEGrMorGy9ff/9+t3/QX06WREPj9aImt/6FwCeu76TpRTBPsPHgf4+YeWyvPoW2HpFv9UDAdyMrD/GpR0rgR+zIG9QBBr3MeUzV78XzxuBKzH+CdMqsAmfDS/WO0hb0ugi+PVneFHDxtO6T8CNRx4DEKmg/mQfyiJXqbpTOeMbFqEjy3f5EKSxgqrysN4IJr9CFa74OlSevnz0sS9g=
+  app: whispering-taiga-22160
+  on:
+    repo: nomcgill/node-restaurants-app-mongoose
+    branch: feature/with-tests
